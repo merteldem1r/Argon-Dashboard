@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: sans-serif;
+        background-color: #f3f5f6;
+    }
+
+    main {
+        @apply xl:ml-[17rem] ml-0 min-h-screen p-5 flex flex-col z-[1000];
+    }
+}
+
+@layer components {
+    .side-menu {
+        @apply w-full max-w-[18rem] xl:p-5 p-2 fixed top-0 left-0 h-screen z-[1000];
+    }
+
+    .blue-layout {
+        @apply w-full min-h-[300px] bg-main-blue absolute top-0 left-0 z-[-1];
+    }
+
+    .main-nav-menu {
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: transparent transparent;
+    }
+
+    .main-nav-menu::-webkit-scrollbar {
+        width: 0.5em;
+    }
+
+    .main-nav-menu::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+
+    .main-nav-menu:hover::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .update-img-box {
+        @apply flex items-center justify-center w-[50px] h-[50px] rounded-full text-white
+    }
+
+    .white-icon {
+        filter: invert(100%) sepia(0%) saturate(10000%) hue-rotate(0deg) brightness(100%) contrast(100%);
+    }
+
+    .table-item {
+        @apply text-[#54647F] font-semibold
+    }
+
+    .category-icon {
+        @apply bg-black w-[32px] h-[32px] rounded-lg text-white flex items-center justify-center text-xs
+    }
+
+    .close-menu-icon {
+        @apply xl:hidden block absolute top-0 right-2 opacity-60 hover:scale-[1.2] transition-all text-xl cursor-pointer
+    }
+}
