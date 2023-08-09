@@ -49,7 +49,7 @@
     }
 
     .table-item {
-        @apply text-[#54647F] font-semibold
+        @apply text-xs sm:text-base text-[#54647F] font-semibold
     }
 
     .category-icon {

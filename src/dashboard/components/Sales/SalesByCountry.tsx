@@ -60,7 +60,7 @@ export function SalesByCountry() {
       dataIndex: 'country',
       key: 'country',
       render: text => (
-        <span className="text-xs table-item">{text}</span>
+        <span className="table-item">{text}</span>
       ),
     },
     {
@@ -68,7 +68,7 @@ export function SalesByCountry() {
       dataIndex: 'sales',
       key: 'sales',
       render: text => (
-        <span className="text-xs table-item">{text}</span>
+        <span className="table-item">{text}</span>
       ),
     },
     {
@@ -76,7 +76,7 @@ export function SalesByCountry() {
       dataIndex: 'value',
       key: 'value',
       render: num => (
-        <span className="text-xs table-item">{formatCurrency(num)}</span>
+        <span className="table-item">{formatCurrency(num)}</span>
       ),
     },
     {
